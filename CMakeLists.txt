@@ -77,13 +77,13 @@ configure_file(double-conversionConfigVersion.cmake.in
   @ONLY)
 #
 # install config files for find_package
-install(FILES
-  "${PROJECT_BINARY_DIR}/double-conversionConfig.cmake"
-  "${PROJECT_BINARY_DIR}/double-conversionConfigVersion.cmake"
-  DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
+#install(FILES
+#  "${PROJECT_BINARY_DIR}/double-conversionConfig.cmake"
+#  "${PROJECT_BINARY_DIR}/double-conversionConfigVersion.cmake"
+#  DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
 
 #
 # generates install cmake files to find libraries in installation.
-install(EXPORT double-conversionLibraryDepends DESTINATION
-  "${INSTALL_CMAKE_DIR}" COMPONENT dev)
+#install(EXPORT double-conversionLibraryDepends DESTINATION
+#  "${INSTALL_CMAKE_DIR}" COMPONENT dev)
