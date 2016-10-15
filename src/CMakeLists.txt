@@ -40,3 +40,10 @@ set_target_properties(double-conversion
 #  ARCHIVE DESTINATION "${INSTALL_LIB_DIR}/lib" COMPONENT lib
 #  PUBLIC_HEADER DESTINATION "${INSTALL_INCLUDE_DIR}/include/double-conversion"
 #  COMPONENT dev)
+
+if(double_conversion_install_directory)
+    install(
+        TARGETS double-conversion
+        DESTINATION ${double_conversion_install_directory}
+    )
+endif()
